@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                <?php bloginfo('name'); ?>
+                <img src="http://localhost:8888/wordpress/wp-content/uploads/2016/01/graydient-creative-rev.png" class="img-responsive" alt="Brand">
             </a>
     </div>
 
