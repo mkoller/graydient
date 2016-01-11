@@ -1,1 +1,17 @@
 
+h1 {
+	font-family: $primary-font;
+	font-size: 30px;
+	color: $headline-color;
+}
+
+p {
+	font-family: $secondary-font;
+	color: $text-color;
+	font-weight: 400;
+}
+
+time {
+	display: none;
+}
+
