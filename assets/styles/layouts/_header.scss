@@ -20,6 +20,7 @@ nav {}
 	    	margin-top: -10px;
     	}
     	@media #{$mq-mobileOnly} {
+    		min-width: 120px;
     		width: 20%;
     		margin-top: -10px;
     	}
@@ -31,5 +32,18 @@ nav {}
 		  color: #a2a2a2;
 		  transition: ease .5s;
 		}
+  	}
+  	.navbar-nav>.active>a {
+  		color: $link;
+  		background-color: transparent;
+  		&:hover {
+  			background-color: transparent;
+  		}
+  		&:focus{
+  			background-color: transparent;
+  		}
+  		&:visited {
+  			background-color: transparent;
+  		}
   	}
 }
