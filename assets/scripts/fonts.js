@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	WebFontConfig = {
-    google: { families: [ 'Oswald:400,700,300:latin', 'Cabin:400,700:latin' ] }
+    google: { families: [ 'Oswald:400,700,300:latin', 'Cabin:400,700:latin', 'Raleway:400,500:latin', 'Fira+Sans:400,300:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');

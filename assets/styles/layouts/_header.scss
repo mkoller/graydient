@@ -1,11 +1,35 @@
 
 nav {}
 
+.navbar {
+	height: 8em;
+	@media #{$mq-mobileOnly}{
+		height: auto;
+	}
+}
+
 .navbar-default {
 	background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2016/01/background.png);
 	img {
 		height: auto;
-    width: 150px;
-    margin-top: -16px;
+		width: 40%;
+    	position: absolute;
+		@media #{$mq-mediumScreen}{
+			position: relative;
+		    width: 250px;
+	    	margin-top: -10px;
+    	}
+    	@media #{$mq-mobileOnly} {
+    		width: 20%;
+    		margin-top: -10px;
+    	}
 	}
+	.navbar-nav>li>a {
+		color: $link;
+		transition: ease .5s;
+	   	&:hover {
+		  color: #a2a2a2;
+		  transition: ease .5s;
+		}
+  	}
 }

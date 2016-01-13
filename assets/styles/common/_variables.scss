@@ -5,6 +5,18 @@ $icon-font-path: "../fonts/";
 $main-sm-columns: 12;
 $sidebar-sm-columns: 4;
 
+// Media Queries
+//$mq-mobileOnly: "only screen and (max-width:768px)";
+$mq-mobileOnly: "only screen and (max-width:47em)";
+//$mq-smallScreen: "only screen and (min-width:480px)";
+$mq-smallScreen: "only screen and (min-width:30em)";
+//$mq-mediumScreen: "only screen and (min-width:768px)";
+$mq-mediumScreen: "only screen and (min-width:48em)";
+//$mq-largeScreen: "only screen and (min-width:1020px)";
+$mq-largeScreen: "only screen and (min-width:63.75em)";
+//$mq-xLargeScreen: "only screen and (min-width:1200px)";
+$mq-xLargeScreen: "only screen and (min-width:75em)";
+
 // Colors
 $brand-primary:  #0db2ad;
 $text-color:     #818284;
@@ -12,7 +24,11 @@ $text-alt:       #008692;
 $paragraph-alt:  #bbd36a;
 $headline-color: #46484d;
 
+//links
+$link : #fff;
+
 //  Fonts
-$primary-font: 'Oswald', sans-serif;
+$primary-font:   'Oswald', sans-serif;
 $secondary-font: 'Cabin', sans-serif;
-$accent-font: cursive;
+$third-font:     'Raleway', sans-serif;
+$fouth-font:     'Fira Sans', sans-serif;
