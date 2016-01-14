@@ -5,6 +5,23 @@ h1 {
 	color: $headline-color;
 }
 
+h2 {
+	.entry-title{
+		text-decoration: none;
+		color: $headline-color;
+		font-family: $primary-font;
+		font-size: 80px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	a {
+		color: $headline-color;
+	}
+	&:hover {
+		color: $headline-color;
+	}
+}
+
 p {
 	font-family: $secondary-font;
 	color: $text-color;
@@ -17,6 +34,10 @@ a {
 }
 
 time {
+	display: none;
+}
+
+.page-header {
 	display: none;
 }
 

@@ -10,7 +10,8 @@ nav {}
 
 .navbar-default {
 	background-image: url(http://localhost:8888/wordpress/wp-content/uploads/2016/01/background.png);
-	img {
+	border-bottom: 5px solid $secondary-color;
+  img {
 		height: auto;
 		width: 40%;
     	position: absolute;
