@@ -41,22 +41,6 @@ use Roots\Sage\Wrapper;
     ?>
     </div>
 
-    <script type="text/javascript">
-$(document).ready(function() {
-  var $menu = $('#menu'),
-    $menulink = $('.menu-link'),
-    $wrap = $('#wrap');
-  
-  $menulink.click(function() {
-    console.log('hello');
-    $menulink.toggleClass('active');
-    $wrap.toggleClass('active');
-    $('.bar').toggleClass('animate');
-    return false;
-  });
-
-});
-    </script>
 
   </body>
 </html>
