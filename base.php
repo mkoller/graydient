@@ -14,26 +14,49 @@ use Roots\Sage\Wrapper;
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
       </div>
     <![endif]-->
+    <div class="wrap" id="wrap" role="document">
     <?php
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="wrap container" role="document">
+
       <div class="content row">
-        <main class="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Setup\display_sidebar()) : ?>
+                 <div class="hero">
+            <img src="http://placehold.it/1280x400" alt="">
+         </div>
+         <div class="main">
+           <?php include Wrapper\template_path(); ?>
+         </div>
+                 <?php if (Setup\display_sidebar()) : ?>
           <aside class="sidebar">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
       </div><!-- /.content -->
-    </div><!-- /.wrap -->
+
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
     ?>
+    </div>
+
+    <script type="text/javascript">
+$(document).ready(function() {
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link'),
+    $wrap = $('#wrap');
+  
+  $menulink.click(function() {
+    console.log('hello');
+    $menulink.toggleClass('active');
+    $wrap.toggleClass('active');
+    $('.bar').toggleClass('animate');
+    return false;
+  });
+
+});
+    </script>
+
   </body>
 </html>

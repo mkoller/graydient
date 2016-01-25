@@ -2,12 +2,11 @@
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-/*@import "../../bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.min.css";*/
+
 
 @import "common/global";
-//@import "common/mixins";
+@import "common/defaults";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";

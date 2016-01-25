@@ -27,10 +27,3 @@ foreach ($sage_includes as $file) {
 }
 unset($file, $filepath);
 
-// Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php');
-
-// Register Menu
-register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'graydient' ),
-) );
