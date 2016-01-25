@@ -2,7 +2,7 @@
 
 Basic useful feature list:
 
-This theme is based on Sage, HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass
+This theme is based on Sage, HTML5 Boilerplate, and uses npm, gulp and Bower.
 
 
 Theme Requires
