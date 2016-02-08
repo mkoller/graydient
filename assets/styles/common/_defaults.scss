@@ -1,5 +1,9 @@
-body {
-	margin: 0;
+body{
+    background:#00a9a6;
+    margin: 0;
+}
+*{
+    box-sizing:border-box;
 }
 
 html{
@@ -8,7 +12,52 @@ html{
    font-weight: 300;
    -webkit-font-smoothing: antialiased;
 }
-p{
+
+ul {
+    list-style: none;
+}
+
+p { 
   line-height: 180%;
   margin: 1em 0;
+}
+
+
+.white {
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+
+$color-1 : #00a9a6;
+$color-2 : #b7d26b;
+$color-3 : #e8842c;
+$color-4 : #666;
+$color-5 : #5f6b6b;
+
+.color-1{
+    color: $color-1;
+}
+.color-2{
+    color: $color-2;
+}
+.color-3{
+    color: $color-3;
+}
+.color-4{
+    color: $color-4;
+}
+a {
+    color: $color-1;
+}
+.full {
+    width: 100%;
+    min-height: 100px;
+    .container {
+        max-width: 1020px;
+        margin: 0 auto;
+    }
 }

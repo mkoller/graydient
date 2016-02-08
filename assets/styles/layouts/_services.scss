@@ -1,0 +1,52 @@
+/* Header */
+.services-header {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform:translateY(-50%);
+    z-index: 1000;
+    text-align: center;
+    @media #{$mq-mobileOnly}{
+        display: none;
+    }
+    h1, p {
+        color: #fff;
+    }
+    p {
+        width: 50%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    &-container{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.services-section {
+    background: url(/Img/graydient-web-bkg.svg);
+    background-size: auto 100%;
+    @include clearfix();
+
+    .service {
+        @include clearfix();
+        .icon-left {
+            text-align:center;
+            padding:25px 10px;
+            img {
+                max-width: 30%;
+                min-width:60px;
+            }
+        }
+
+        .info-right {
+            background: #fff;
+            padding:15px 25px;
+            .service-info{
+                max-width: 700px;
+            }
+        }
+    }
+}

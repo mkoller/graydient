@@ -1,16 +1,20 @@
-header{
-  height: 50px;
-  background: #dedede;
+.main-header{
+  width:100%;
+  z-index:100;
+  position:absolute;
+  padding: 10px 15px;
+  background:rgba(0,0,0,0.5);
 }
-.wrap {
+.page-wrap {
   position: relative;
   right: 0;
   min-height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   transition: all 0.3s ease-out;
+  background:#fff;
   &.active{
     right: 16em;
-    overflow-x: visible;
+    overflow: visible;
     transition: all 0.3s ease-out;
   }
 }
@@ -20,22 +24,50 @@ a{
    font-weight: 300;
    -webkit-font-smoothing: antialiased;
 }
+
+.logo {
+    max-width: 225px;
+    float: left;
+    img {
+        max-width: 100%;
+        max-height:60px;
+    }
+}
 .menu-link {
     float: right;
     display: block;
     text-decoration: none;
-    width: 35px;
     padding: 12px;
-    height:26px;
+    position:relative;
+    width: 57px;
+    height: 57px;
     &:hover{
       cursor: pointer;
+    }
+    span{
+        color: #00a9a6;
+        font-size:3em;
+        //font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        &.bracket-left{
+            position: absolute;
+            left: -3px;
+            top: -2px;
+            transform: rotate(-3deg);
+        }
+        &.bracket-right{
+            position: absolute;
+            right: -2px;
+            top: -2px;
+            transform: rotate(-3deg);
+        }
     }
 }
 
 nav[role=navigation] {
-  background: #999;
+  //background: #999;
   clear: both;
-  overflow: hidden;
+  //overflow: hidden;
   width: 16em;
   //height: 100%;
   position: absolute;
@@ -50,8 +82,7 @@ nav[role=navigation] {
         display: block;
         padding: 0.8em;
         color: #fff;
-        border-top: 1px solid #808080;
-
+        border-top: 1px solid darken(#00a9a6,5%);
       }
       &:hover{
         ul{
@@ -65,9 +96,9 @@ nav[role=navigation] {
         transition: all 0.3s ease-out;
         li{
           a{
-            background: #808080;
+            background: #00a9a6;
             &:hover{
-              background: darken(#808080,10%);
+              background: darken(#00a9a6,5%);
             }
           }
         }
@@ -75,6 +106,10 @@ nav[role=navigation] {
     }
   }
 }
+
+$bar-width: 32px;
+$bar-height: 4px;
+$bar-spacing: 10px;
 
 .bar,
 .bar:after,
@@ -88,6 +123,7 @@ nav[role=navigation] {
   transform: translateY($bar-spacing);
   transition: all 0ms 300ms;
   background: #fff;
+  top: 5px;
   &.animate {
     background: rgba(255, 255, 255, 0); 
   }

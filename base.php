@@ -14,31 +14,35 @@ use Roots\Sage\Wrapper;
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
       </div>
     <![endif]-->
-    <div class="wrap" id="wrap" role="document">
-    <?php
-      do_action('get_header');
-      get_template_part('templates/header');
-    ?>
+    <div class="page-wrap" id="page-wrap" role="document">
+      <?php
+        do_action('get_header');
+        get_template_part('templates/header');
+      ?>
 
-      <div class="content row">
-                 <div class="hero">
-            <img src="http://placehold.it/1280x400" alt="">
-         </div>
-         <div class="main">
-           <?php include Wrapper\template_path(); ?>
-         </div>
-                 <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
+        <div class="content row">
+                   <div class="hero">
+              <img src="http://localhost:8888/wordpress/wp-content/uploads/2016/02/blog-header.png" alt="">
+                  <div class="services-header">
+                      <h1>We like to Blog!</h1>
+                      <p> Graydient Creative is a full spectrum marketing solutions company for businesses in the hospitality and service industries. We’re more than just pretty websites and social media posts. We were born with creativity, and raised on innovation. </p>
+                  </div>
+           </div>
+           <div class="main">
+             <?php include Wrapper\template_path(); ?>
+           </div>
+                   <?php if (Setup\display_sidebar()) : ?>
+            <aside class="sidebar">
+              <?php include Wrapper\sidebar_path(); ?>
+            </aside><!-- /.sidebar -->
+          <?php endif; ?>
+        </div><!-- /.content -->
 
-    <?php
-      do_action('get_footer');
-      get_template_part('templates/footer');
-      wp_footer();
-    ?>
+      <?php
+        do_action('get_footer');
+        get_template_part('templates/footer');
+        wp_footer();
+      ?>
     </div>
 
 
