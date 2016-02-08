@@ -22,7 +22,13 @@ use Roots\Sage\Wrapper;
 
         <div class="content row">
                    <div class="hero">
-              <img src="<?php echo get_site_url(); ?>/wp-content/uploads/2016/02/blog-header.png" alt="">
+              
+                      <?php if( get_field('hero_image') ): ?>
+
+                        <img src="<?php the_field('hero_image'); ?>" />
+
+                      <?php endif; ?>
+
                   <div class="services-header">
                       <h1><?php the_field('hero_header'); ?></h1>
                       <p> Graydient Creative is a full spectrum marketing solutions company for businesses in the hospitality and service industries. We’re more than just pretty websites and social media posts. We were born with creativity, and raised on innovation. </p>
