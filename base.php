@@ -29,6 +29,12 @@ use Roots\Sage\Wrapper;
 
                       <?php endif; ?>
 
+                      <?php if( get_field('hero_post_image') ): ?>
+
+                        <img src="<?php the_field('hero_post_image'); ?>" />
+
+                      <?php endif; ?>
+
                   <div class="services-header">
                       <h1><?php the_field('hero_header'); ?></h1>
                       <p> Graydient Creative is a full spectrum marketing solutions company for businesses in the hospitality and service industries. We’re more than just pretty websites and social media posts. We were born with creativity, and raised on innovation. </p>
