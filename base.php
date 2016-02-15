@@ -23,9 +23,9 @@ use Roots\Sage\Wrapper;
         <div class="content row">
                    <div class="hero">
               
-                      <?php if( get_field('hero_image') ): ?>
+                      <?php if( get_field('hero_homepage_image') ): ?>
 
-                        <img src="<?php the_field('hero_image'); ?>" />
+                        <img src="<?php the_field('hero_homepage_image'); ?>" />
 
                       <?php endif; ?>
 
@@ -37,7 +37,9 @@ use Roots\Sage\Wrapper;
 
                   <div class="services-header">
                       <h1><?php the_field('hero_header'); ?></h1>
-                      <p> Graydient Creative is a full spectrum marketing solutions company for businesses in the hospitality and service industries. We’re more than just pretty websites and social media posts. We were born with creativity, and raised on innovation. </p>
+                      <h1><?php the_field('hero_post_header'); ?></h1>
+                      <p> <?php the_field('hero_text'); ?> </p>
+                      <p> <?php the_field('hero_post_text'); ?> </p>
                   </div>
            </div>
            <div class="main">
