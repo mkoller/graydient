@@ -22,6 +22,16 @@
         "scripts/menu.js"
       ]
     },
+    "classie.js": {
+      "files": [
+        "scripts/classie.js"
+      ]
+    },
+    "posts.js": {
+      "files": [
+        "scripts/posts.js"
+      ]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

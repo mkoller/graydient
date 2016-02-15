@@ -36,15 +36,10 @@ use Roots\Sage\Wrapper;
                       <?php endif; ?>
 
                   <div class="services-header">
-                  <?php if( get_field('hero_header') ): ?>
                       <h1><?php the_field('hero_header'); ?></h1>
-                  <?php endif; ?>
-                  <?php if( get_field('hero_text') ): ?>
-                  <p> <?php the_field('hero_text'); ?> </p>
-                  <?php endif; ?>
-
-                  <h1><?php the_field('hero_post_header'); ?></h1>    
-                  <p> <?php the_field('hero_post_text'); ?> </p>
+                      <h1><?php the_field('hero_post_header'); ?></h1>
+                      <p> <?php the_field('hero_text'); ?> </p>
+                      <p> <?php the_field('hero_post_text'); ?> </p>
                   </div>
            </div>
            <div class="main">

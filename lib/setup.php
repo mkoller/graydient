@@ -106,3 +106,7 @@ function assets() {
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
 wp_enqueue_script('sage/menu_js', Assets\asset_path('scripts/menu.js'), ['sage/js'], null, true);
+
+wp_enqueue_script('sage/classie_js', Assets\asset_path('scripts/classie.js'), ['sage/js'], null, true);
+
+wp_enqueue_script('sage/posts_js', Assets\asset_path('scripts/posts.js'), ['sage/js'], null, true);
