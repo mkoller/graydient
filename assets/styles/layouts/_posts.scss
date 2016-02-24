@@ -3,20 +3,6 @@
 
 
 
-
-body {
-	background: #fff;
-	color: #69606b;
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 1.5;
-	font-family: 'Raleway', Arial, sans-serif;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden;
-}
-
-
 a {
 	outline: none;
 	color: #cf4a5c;
@@ -31,7 +17,7 @@ a:hover, a:focus {
 
 
 /* demo */
-
+/*
 @font-face {
 	font-weight: normal;
 	font-style: normal;
@@ -42,7 +28,7 @@ a:hover, a:focus {
 		url('../fonts/icomoon/icomoon.ttf?-ee0u0f') format('truetype'),
 		url('../fonts/icomoon/icomoon.svg?-ee0u0f#icomoon') format('svg');
 }
-
+*/
 html, body, .container, .header {
 	height: 100%;
 }
@@ -180,7 +166,7 @@ button.trigger span::before {
 	font-weight: normal;
 	font-style: normal;
 	font-variant: normal;
-	font-family: 'icomoon';
+/*	font-family: 'icomoon'; */
 	line-height: 1;
 	speak: none;
 	-webkit-font-smoothing: antialiased;
