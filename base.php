@@ -22,8 +22,8 @@ use Roots\Sage\Wrapper;
 
       <!-- Start Header -->
       <div class="header"> 
-        <div class="content row">
-                   <div class="hero">
+        <div class="">
+                   <div class="">
               
                       <?php if( get_field('hero_homepage_image') ): ?>
 
@@ -37,7 +37,7 @@ use Roots\Sage\Wrapper;
 
                       <?php endif; ?>
 
-                  <div class="services-header">
+                  <div class="">
                       <h1><?php the_field('hero_header'); ?></h1>
                       <h1><?php the_field('hero_post_header'); ?></h1>
                       <p> <?php the_field('hero_text'); ?> </p>
@@ -50,11 +50,11 @@ use Roots\Sage\Wrapper;
 
         <!-- Start Content -->
         <article class="content">
-           <div class="main">
+           <div class="">
              <?php include Wrapper\template_path(); ?>
            </div>
                    <?php if (Setup\display_sidebar()) : ?>
-            <aside class="sidebar">
+            <aside class="">
               <?php include Wrapper\sidebar_path(); ?>
             </aside><!-- /.sidebar -->
           <?php endif; ?>
