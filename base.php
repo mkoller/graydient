@@ -24,20 +24,20 @@ use Roots\Sage\Wrapper;
       <div class="header"> 
         <div class="">
                    <div class="">
-              
+                    <div class="bg-img">
                       <?php if( get_field('hero_homepage_image') ): ?>
 
-                        <img class="bg-img" src="<?php the_field('hero_homepage_image'); ?>" />
+                        <img class="" src="<?php the_field('hero_homepage_image'); ?>" />
 
                       <?php endif; ?>
 
                       <?php if( get_field('hero_post_image') ): ?>
 
-                        <img class="bg-img" src="<?php the_field('hero_post_image'); ?>" />
+                        <img class="" src="<?php the_field('hero_post_image'); ?>" />
 
                       <?php endif; ?>
-
-                  <div class="">
+                    </div>
+                  <div class="title">
                       <h1><?php the_field('hero_header'); ?></h1>
                       <h1><?php the_field('hero_post_header'); ?></h1>
                       <p> <?php the_field('hero_text'); ?> </p>
