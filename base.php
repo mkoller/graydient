@@ -23,7 +23,7 @@ use Roots\Sage\Wrapper;
       <!-- Start Header -->
       <div class="header"> 
         <div class="">
-                   <div class="">
+        
                     <div class="bg-img">
                       <?php if( get_field('hero_homepage_image') ): ?>
 
@@ -43,16 +43,17 @@ use Roots\Sage\Wrapper;
                       <p> <?php the_field('hero_text'); ?> </p>
                       <p> <?php the_field('hero_post_text'); ?> </p>
                   </div>
-           </div>
+ 
         <button class="trigger" data-info="Click to see the header effect"><span>Trigger</span>
         </button>
         <!-- End Header -->
-
+</div>
+</div>
         <!-- Start Content -->
         <article class="content">
-           <div class="">
+
              <?php include Wrapper\template_path(); ?>
-           </div>
+
                    <?php if (Setup\display_sidebar()) : ?>
             <aside class="">
               <?php include Wrapper\sidebar_path(); ?>
